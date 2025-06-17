@@ -15,9 +15,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")  // Aplica CORS a tus endpoints
-                        .allowedOrigins("http://localhost:5174") // Tu frontend en React
+                        .allowedOrigins("https://symphonious-pegasus-a9deed.netlify.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        .allowedHeaders("*");
+                        .allowCredentials(true);
 
             }
         };
